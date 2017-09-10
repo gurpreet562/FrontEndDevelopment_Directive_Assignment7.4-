@@ -1,0 +1,12 @@
+
+<h1>LIST OF EMPLOYEES</h1>
+    <table >
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            </tr>
+        <tr *ngFor="let employee of employees" ;[ng-style]="{ ($index % 2 === 0 ? 'green' : 'red')}" >                             
+     <td > {{ employee.name }}</td>
+     <td >{{employee.age}}</td>
+     </tr>
+    </table>
